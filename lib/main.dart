@@ -31,11 +31,10 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GithubLoginWidget(
       builder: (context) {
-        return Scaffold(
-          appBar: AppBar(title: Text(title)),
-          body: const Center(child: Text('You are logged in')),
+              return Scaffold(appBar: AppBar(title: Text(title)),
+            body: const Center(child: Text('You are logged in')),
         );
-      },
+            },
       githubClientId: githubClientId,
       githubClientSecret: githubClientSecret,
       githubScopes: githubScopes,
